@@ -14,35 +14,82 @@
           Ever have trouble recalling the exact syntax for your favorite CSS code? Give it a permanent home and add it to
               this page! Select any snippet below and it'll automatically select all of the code for you to copy. 
         </p>
-      <section>
-        
-          <header>Flexbox Row</header>
-          <p>Use these three properties to create a Flexbox row layout.
-            Use these three properties to create a Flexbox row layout.</p>
-            <div>
-              .row {
+      <main>
+        <section class = "card">
+          <div class="card">Flexbox Row</div>
+            <p>
+              Use these three properties to create a Flexbox row layout.
+            Use these three properties to create a Flexbox row layout.
+            </p>
+              <pre>
+                  .row {
                   display: flex;
                   flex-direction: row;
                   flex-wrap: wrap;
                 }
-            </div>
+               </pre>
           
-          <header>CSS Grid Layout</header>
+          <div class="card">CSS Grid Layout</div>
+            <p>
+              Build a 12-column layout using CSS Grid
+            </p>
+            <pre>
+              .grid {
+                  display: grid;
+                  width: 100%;
+                  grid-template-columns: repeat(12, 1fr);
+                }
+            </pre>
+          
+          <div class="card">Flexbox column</div>
+            <p>
+              Use this to create a Flexbox column layout.
+            </p>
+            <pre>
+              .column {
+                  display: flex;
+                  flex-direction: column
+                }
+            </pre>          
+          
+          <div class = "card">Linear Gradients</div>
           <p>
-            
+            This will create a background linear gradient from top to bottom.
           </p>
+          <pre>
+            .linear-gradient-background {
+                background-image: linear-gradient(
+                  rgba(232, 102, 236, 0.3) 0%,
+                  rgba(232, 102, 236, 0.6) 100%
+                );
+              }
+          </pre>
           
-          <header>Flexbox column</header>
+          <div class="card">Box Transition Glow</div>
+          <p>
+            Use transition and box shadows to glow on hover.
+          </p>
+          <pre>
+            .code-card .card-header {
+                border-radius: 8px;
+                transition: all 0.5s ease-in-out;
+              }
+          </pre>
           
-          <header>Linear Gradients</header>
           
-          <header>Box Transition Glow</header>
-          
-          <header>Overlay Card with Title</header>
-          
+          <div class="card">Overlay Card with Title</div>
+          <p>
+            Use position properties and negative margins to raise elements higher than their natural starting point.
+          </p>
+          <pre>
+            .card-header {
+                position: relative;
+                margin-top: -20px;
+              }
+          </pre>
          
      
-      </section>
+      </main>
     </header>
 
     <section>
